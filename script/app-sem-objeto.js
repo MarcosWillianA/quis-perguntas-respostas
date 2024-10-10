@@ -70,6 +70,15 @@ function mostrarPergunta() {
     });
 }
 
+function mostrarResultados() {
+    container.style.display = 'none'; // Esconde o container do quiz
+    resultados.style.display = 'block'; // Mostra a div de resultados
+    numeroAcertos.innerHTML = acertos; // Atualiza o número de acertos
+
+    proxima.style.opacity = '0.5'; // Garante que o botão "Próxima" não esteja visível
+    proxima.style.pointerEvents = 'none'; // Desabilita o clique no botão "Próxima"
+}
+
 mostrarPergunta();
 
 proxima.addEventListener('click', () => {
@@ -78,6 +87,8 @@ proxima.addEventListener('click', () => {
         mostrarPergunta();
     } else {
         // Aqui você pode adicionar lógica para mostrar o resultado final
+        voltar.style.pointerEvents = 'auto';
+        voltar.style.opacity = '1';
         perguntaRespostas.style.display = 'none';
         resultados.style.display = 'flex';
         resultadoAcertos.innerHTML = `Você acertou ${acertos} de ${perguntas.length} perguntas!`;
@@ -85,6 +96,17 @@ proxima.addEventListener('click', () => {
 });
 
 voltar.addEventListener('click', () => {
+    // Reinicia o quiz
     
-})
+    perguntaAtual = 0;
+    acertos = 0;
+    resultados.style.display = 'none'; // Esconde a div de resultados
+    container.style.display = 'block'; // Mostra o container do quiz
 
+    respostas.forEach(resposta => {
+        resposta.classList.remove('correta', 'errada'); // Limpa as classes
+        resposta.style.opacity = '1'; // Reseta a opacidade
+        resposta.style.pointerEvents = 'auto'; // Habilita o clique
+    });
+    mostrarPergunta(); // Mostra a primeira pergunta
+});
