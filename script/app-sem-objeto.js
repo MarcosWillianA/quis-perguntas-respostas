@@ -5,6 +5,7 @@ const respostas = document.querySelectorAll('.respostas');
 const proxima = document.querySelector('#proxima');
 
 let perguntaAtual = 0;
+let acertos = 0;
 
 const perguntas = [
     {
@@ -42,14 +43,17 @@ function mostrarPergunta() {
             })
             if (resposta.innerHTML === escolhida.opcoes[escolhida.correta]) {
                 console.log('Acertou!');
+                acertos++;
+                console.log(acertos);
                 resposta.classList.add('correta');
-                
+                return;
             } else {
                 console.log('ERRRRRRou!');
                 resposta.classList.add('errada');
                 console.log(respostas[escolhida.correta]);
                 respostas[escolhida.correta].classList.add('correta');
                 respostas[escolhida.correta].style.opacity = '.5';
+                return;
             }
         })
     })
@@ -60,9 +64,13 @@ mostrarPergunta();
 proxima.addEventListener('click', () => {
     perguntaAtual++;
     escolheuResposta = false;
+    proxima.style.opacity = '.5';
+    proxima.style.pointerEvents = 'none';
     respostas.forEach(resposta => {
-        resposta.removeEventListener('click')
+        resposta.style.pointerEvents = 'auto';
+        resposta.classList.remove('correta', 'errada');
     })
+    respostas[escolhida.correta].style.opacity = '1';
     mostrarPergunta();
 })
 
