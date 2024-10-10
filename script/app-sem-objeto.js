@@ -58,13 +58,54 @@ const perguntas = [
         correta: 2
     },
     {
-        questao: 'Qeum foi o primeiro homem a pisar na Lua?',
+        questao: 'Quem foi o primeiro homem a pisar na Lua?',
         opcoes: ['Yuri Gagarin', 'Neil Armstrong', 'Buzz Aldrin', 'John Glenn'],
+        correta: 1
+    },
+    {
+        questao: 'Qual é o símbolo químico do ouro?',
+        opcoes: ['Au', 'Ag', 'Pb', 'Fe'],
+        correta: 0
+    },
+    {
+        questao: 'Qual é a língua mais falada do mundo?',
+        opcoes: ['Espanhol', 'Inglês', 'Mandarim', 'Árabe'],
+        correta: 2
+    },
+    {
+        questao: 'Quem é o personagem principal de "O Senhor dos Anéis"?',
+        opcoes: ['Aragorn', 'Frodo', 'Gandalf', 'Legolas'],
+        correta: 1
+    },
+    {
+        questao: 'Qual é a capital do Japão?',
+        opcoes: ['Seul', 'Tóquio', 'Pequim', 'Bangcoc'],
+        correta: 1
+    },
+    {
+        questao: 'Qual animal é conhecido por sua habilidade de imitar sons?',
+        opcoes: ['Papagaio', 'Gato', 'Cachorro', 'Peixe'],
+        correta: 0
+    },
+    {
+        questao: 'Qual foi a primeira civilização conhecida?',
+        opcoes: ['Egípcia', 'Mesopotâmica', 'Grega', 'Romana'],
+        correta: 1
+    },
+    {
+        questao: 'Qual é o menor país do mundo?',
+        opcoes: ['Mônaco', 'Nauru', 'Vaticano', 'São Marino'],
+        correta: 2
+    },
+    {
+        questao: 'Quem é o criador do personagem "Harry Potter?',
+        opcoes: ['J.R.R. Tolkien', 'J.K. Rowling', 'C.S. Lewis', 'George R.R. Martin'],
         correta: 1
     },
     {
         questao: 
     }
+
 
 ];
 
