@@ -9,3 +9,150 @@ Usar ou não classe e objetos.
 Talvez usar localStorage, não sei...
 
 Enfim, vamos ao trabalho!
+
+------------
+
+AQUI ESTÃO AS PERGUNTAS E AS RESPOSTAS: 
+
+Perguntas de Quiz
+Qual é o maior mamífero do mundo?
+a) Elefante
+b) Baleia Azul
+c) Girafa
+d) Orca
+
+Qual é a capital da França?
+a) Roma
+b) Paris
+c) Madri
+d) Berlim
+
+Quem pintou a Mona Lisa?
+a) Vincent van Gogh
+b) Pablo Picasso
+c) Leonardo da Vinci
+d) Claude Monet
+
+Qual é o continente mais populoso?
+a) Europa
+b) África
+c) Ásia
+d) América do Norte
+
+Em que ano ocorreu a independência dos Estados Unidos?
+a) 1776
+b) 1789
+c) 1801
+d) 1812
+
+Qual animal é conhecido por mudar de cor?
+a) Camaleão
+b) Sapo
+c) Elefante
+d) Canguru
+
+Qual é o maior deserto do mundo?
+a) Deserto de Gobi
+b) Deserto do Saara
+c) Deserto da Antártica
+d) Deserto de Atacama
+
+Quem escreveu "Dom Casmurro"?
+a) Jorge Amado
+b) Machado de Assis
+c) Clarice Lispector
+d) Guimarães Rosa
+
+Qual é o planeta mais próximo do sol?
+a) Terra
+b) Vênus
+c) Mercúrio
+d) Marte
+
+Quem foi o primeiro homem a pisar na Lua?
+a) Yuri Gagarin
+b) Neil Armstrong
+c) Buzz Aldrin
+d) John Glenn
+
+Qual é o símbolo químico do ouro?
+a) Au
+b) Ag
+c) Pb
+d) Fe
+
+Qual é a língua mais falada do mundo?
+a) Espanhol
+b) Inglês
+c) Mandarim
+d) Árabe
+
+Quem é o personagem principal de "O Senhor dos Anéis"?
+a) Aragorn
+b) Frodo
+c) Gandalf
+d) Legolas
+
+Qual é a capital do Japão?
+a) Seul
+b) Tóquio
+c) Pequim
+d) Bangcoc
+
+Qual animal é conhecido por sua habilidade de imitar sons?
+a) Papagaio
+b) Gato
+c) Cachorro
+d) Peixe
+
+Qual foi a primeira civilização conhecida?
+a) Egípcia
+b) Mesopotâmica
+c) Grega
+d) Romana
+
+Qual é o menor país do mundo?
+a) Monaco
+b) Nauru
+c) Vaticano
+d) São Marino
+
+Quem é o criador do personagem Harry Potter?
+a) J.R.R. Tolkien
+b) J.K. Rowling
+c) C.S. Lewis
+d) Roald Dahl
+
+Qual é o esporte mais popular do mundo?
+a) Basquete
+b) Futebol
+c) Tênis
+d) Críquete
+
+Em qual país se encontra a Grande Muralha?
+a) Japão
+b) China
+c) Índia
+d) Coreia do Sul
+
+Respostas Corretas
+b) Baleia Azul
+b) Paris
+c) Leonardo da Vinci
+c) Ásia
+a) 1776
+a) Camaleão
+c) Deserto da Antártica
+b) Machado de Assis
+c) Mercúrio
+b) Neil Armstrong
+a) Au
+c) Mandarim
+b) Frodo
+b) Tóquio
+a) Papagaio
+b) Mesopotâmica
+c) Vaticano
+b) J.K. Rowling
+b) Futebol
+b) China
