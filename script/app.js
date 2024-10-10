@@ -18,23 +18,32 @@ class Quiz {
             //Exibir opções de resposta: 
             respostas.forEach((resposta, index) => {
                 resposta.innerHTML = perguntaAtual.opcoes[index];
-                resposta.dataset.index = index;
+                resposta.dataset.index = index;               
+                let respostaSelecionada = false;
+
                 resposta.addEventListener('click', () => {
-                    console.log(`Clicou em ${resposta.innerHTML}`);
-                    console.log(perguntaAtual.opcoes[perguntaAtual.correta]);
+                    //console.log(`Clicou em ${resposta.innerHTML}`);
+                    //console.log(perguntaAtual.opcoes[perguntaAtual.correta]);
+                    if (respostaSelecionada) return;
+                    respostaSelecionada = true;
+                    
                     if (resposta.innerHTML === perguntaAtual.opcoes[perguntaAtual.correta]) {
                         resposta.classList.add('correta');
-                        resposta.style.pointerEvents = 'none';
+                        proxima.style.opacity = '1';
+                        proxima.style.pointerEvents = 'auto';
                         return;
                     } else {
+                        respostas[perguntaAtual.correta].classList.add('Correta');
                         resposta.classList.add('errada');
-                        resposta.style.pointerEvents = 'none';
+                        proxima.style.opacity = '1';
+                        proxima.style.pointerEvents = 'auto';
                         return;
                     }
                 })
             });
         }
         else {
+            //Tela de fim de quiz! 
             console.log('Fim do Quiz');
         }
     };

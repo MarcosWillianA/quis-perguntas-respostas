@@ -75,6 +75,8 @@ button {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    pointer-events: none;
+    opacity: .5;
 }
 
 button:active {
