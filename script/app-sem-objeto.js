@@ -97,11 +97,11 @@ proxima.addEventListener('click', () => {
 
 voltar.addEventListener('click', () => {
     // Reinicia o quiz
-    
     perguntaAtual = 0;
     acertos = 0;
     resultados.style.display = 'none'; // Esconde a div de resultados
     container.style.display = 'block'; // Mostra o container do quiz
+    perguntaRespostas.style.display = 'block';
 
     respostas.forEach(resposta => {
         resposta.classList.remove('correta', 'errada'); // Limpa as classes
