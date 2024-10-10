@@ -64,6 +64,11 @@ const perguntas = [
         questao: 'Qual é a capital da França?',
         opcoes: ['roma', 'paris', 'madri', 'berlim'],
         correta: 1
+    },
+    {
+        questao: 'Quem pintou a Mona Lisa?',
+        opcoes: ['Vincent van Gogh', 'Pablo Picasso', 'Leonardo da Vinci', 'Claude Monet'],
+        correta: 2
     }
 ];
 
