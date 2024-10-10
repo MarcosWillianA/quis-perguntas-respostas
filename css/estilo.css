@@ -1,0 +1,85 @@
+:root {
+    /* Emerald  */
+    --cor01: #f0fdf4;
+    --cor02: #a7f3d0;
+    --cor03: #34d399;
+    --cor04: #059669;
+    --cor05: #065f46;
+    --cor06: #022c22;
+
+    --erro: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--cor03);
+}
+
+main {
+    min-width: 320px;
+    max-width: 640px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+#container {
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: var(--cor01);
+}
+
+h2, p {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    border: 1px solid purple;
+    margin-top: 10px;
+}
+
+li {
+    border: 1px solid blue;
+    margin: 5px 0;
+    text-indent: 1em;
+}
+
+.correta {
+    background-color: var(--cor04);
+    color: #fff;
+}
+
+.errada {
+    background-color: var(--erro);
+    color: #fff;
+}
+
+button {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 10px 25px;
+    background-color: var(--cor05);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+button:active {
+    background-color: var(--cor06);
+}
+
+p {
+    font-size: .7em;
+}
+
