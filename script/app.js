@@ -19,6 +19,19 @@ class Quiz {
             respostas.forEach((resposta, index) => {
                 resposta.innerHTML = perguntaAtual.opcoes[index];
                 resposta.dataset.index = index;
+                resposta.addEventListener('click', () => {
+                    console.log(`Clicou em ${resposta.innerHTML}`);
+                    console.log(perguntaAtual.opcoes[perguntaAtual.correta]);
+                    if (resposta.innerHTML === perguntaAtual.opcoes[perguntaAtual.correta]) {
+                        resposta.classList.add('correta');
+                        resposta.style.pointerEvents = 'none';
+                        return;
+                    } else {
+                        resposta.classList.add('errada');
+                        resposta.style.pointerEvents = 'none';
+                        return;
+                    }
+                })
             });
         }
         else {
