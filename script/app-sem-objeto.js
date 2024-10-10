@@ -26,7 +26,46 @@ const perguntas = [
         questao: 'Quem pintou a Mona Lisa?',
         opcoes: ['Vincent van Gogh', 'Pablo Picasso', 'Leonardo da Vinci', 'Claude Monet'],
         correta: 2
+    },
+    {
+        questao: 'Qual é o continente mais populoso?',
+        opcoes: ['Europa', 'África', 'Ásia', 'América'],
+        correta: 2
+    },
+    {
+        questao: 'Em que ano ocorreu a independência dos Estados Unidos?',
+        opcoes: ['1776', '1789', '1801', '1812'],
+        correta: 0
+    },
+    {
+        questao: 'Qual animal é conhecido por mudar de cor?',
+        opcoes: ['Camaleão', 'Sapo', 'Elefante', 'Canguru'],
+        correta: 0
+    },
+    {
+        questao: 'Quem escreveu "Dom Casmurro"?',
+        opcoes: ['Jorge Amado', 'Machado de Assis', 'Clarice Lispector', 'Guimarães Rosa'],
+        correta: 1
+    },
+    {
+        questao: 'Qual é o maior deserto do mundo?',
+        opcoes: ['Deserto de Gobi', 'Deserto do Saara', 'Deserto da Antártida', 'Deserto do Atacama'],
+        correta: 2
+    },
+    {
+        questao: 'Qual é o planeta mais próximo do sol?',
+        opcoes: ['Terra', 'Vênus', 'Mercúrio', 'Marte'],
+        correta: 2
+    },
+    {
+        questao: 'Qeum foi o primeiro homem a pisar na Lua?',
+        opcoes: ['Yuri Gagarin', 'Neil Armstrong', 'Buzz Aldrin', 'John Glenn'],
+        correta: 1
+    },
+    {
+        questao: 
     }
+
 ];
 
 function mostrarPergunta() {
