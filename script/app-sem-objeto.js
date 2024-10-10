@@ -103,7 +103,14 @@ const perguntas = [
         correta: 1
     },
     {
-        questao: 
+        questao: 'Qual é o esporte mais popular do mundo?',
+        opcoes: ['Basquete', 'Futebol', 'Tênis', 'Críquete'],
+        correta: 1
+    },
+    {
+        questao: 'Em qual país se econtra a Grande Muralha',
+        opcoes: ['Japão', 'China', 'Índia', 'Coreia do Sul'],
+        correta: 1
     }
 
 
