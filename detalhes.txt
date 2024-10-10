@@ -1,0 +1,11 @@
+Quis de 10 perguntas
+
+Cada pergunta vai ter uma div
+
+A ideia é guardar cada pergunta com suas respostas em uma constante e então ir mudando programaticamente.
+
+Usar ou não classe e objetos. 
+
+Talvez usar localStorage, não sei...
+
+Enfim, vamos ao trabalho!
