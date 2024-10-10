@@ -42,16 +42,29 @@ function mostrarPergunta() {
             })
             if (resposta.innerHTML === escolhida.opcoes[escolhida.correta]) {
                 console.log('Acertou!');
+                resposta.classList.add('correta');
                 
             } else {
                 console.log('ERRRRRRou!');
+                resposta.classList.add('errada');
+                console.log(respostas[escolhida.correta]);
+                respostas[escolhida.correta].classList.add('correta');
+                respostas[escolhida.correta].style.opacity = '.5';
             }
         })
-        
     })
 }
 
 mostrarPergunta();
+
+proxima.addEventListener('click', () => {
+    perguntaAtual++;
+    escolheuResposta = false;
+    respostas.forEach(resposta => {
+        resposta.removeEventListener('click')
+    })
+    mostrarPergunta();
+})
 
       
 
