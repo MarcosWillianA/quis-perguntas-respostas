@@ -4,22 +4,31 @@ const pergunta = document.querySelector('#pergunta');
 const respostas = document.querySelectorAll('.respostas');
 const proxima = document.querySelector('#proxima');
 
-let perguntaAtual = 0;
-
 class Quiz {
-    constructor (questao, opcoes, correta) {
-        this.questao = questao;
-        this.opcoes = opcoes;
-        this.correta = correta;
+    constructor (questoes) {
+        this.perguntas = questoes;
+        this.perguntaAtual = 0;
     };
 
     mostrarPergunta() {
-        const perguntaQuiz = this.perguntas[perguntaAtual];
-        pergunta.innerHTML = perguntaQuiz.questao;
-        respostas.forEach((opcao, index) => {
-            opcao = perguntaQuiz.opcoes[index];
-            respostas.innerHTML = opcao;
-        })
+        if (this.perguntaAtual < this.perguntas.length) {
+            const perguntaAtual = this.perguntas[this.perguntaAtual];
+            pergunta.innerHTML = perguntaAtual.questao;
+
+            //Exibir opções de resposta: 
+            respostas.forEach((resposta, index) => {
+                resposta.innerHTML = perguntaAtual.opcoes[index];
+                resposta.dataset.index = index;
+            });
+        }
+        else {
+            console.log('Fim do Quiz');
+        }
+    };
+
+    proximaPergunta() {
+        this.perguntaAtual++;
+        this.mostrarPergunta();
     }
 };
 
@@ -36,5 +45,10 @@ const perguntas = [
     }
 ];
 
-const meuQuiz = new Quiz(perguntas);
-meuQuiz.mostrarPergunta(); // Mostra a primeira pergunta
+const quiz = new Quiz(perguntas);
+quiz.mostrarPergunta(); // Exibe a primeira pergunta
+
+// Lógica para o botão "Próxima"
+proxima.addEventListener('click', () => {
+    quiz.proximaPergunta();
+});
