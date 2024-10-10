@@ -3,6 +3,10 @@ const perguntaRespostas = document.querySelector('#pergunta-respostas');
 const pergunta = document.querySelector('#pergunta');
 const respostas = document.querySelectorAll('.respostas');
 const proxima = document.querySelector('#proxima');
+const resultados = document.querySelector('#resultados');
+const resultadoAcertos = document.querySelector('#resultado-acertos');
+const numeroAcertos = document.querySelector('#numero-acertos');
+const voltar = document.querySelector('#voltar');
 
 let perguntaAtual = 0;
 let acertos = 0;
@@ -26,6 +30,7 @@ const perguntas = [
 ];
 
 function mostrarPergunta() {
+    resultados.style.display = 'none';
     const escolhida = perguntas[perguntaAtual];
 
     pergunta.innerHTML = escolhida.questao;
@@ -73,10 +78,13 @@ proxima.addEventListener('click', () => {
         mostrarPergunta();
     } else {
         // Aqui você pode adicionar lógica para mostrar o resultado final
-        alert(`Você acertou ${acertos} de ${perguntas.length} perguntas!`);
+        perguntaRespostas.style.display = 'none';
+        resultados.style.display = 'flex';
+        resultadoAcertos.innerHTML = `Você acertou ${acertos} de ${perguntas.length} perguntas!`;
     }
 });
 
-      
-
+voltar.addEventListener('click', () => {
+    
+})
 
