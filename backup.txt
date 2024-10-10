@@ -1,0 +1,48 @@
+function mostrarPergunta() {
+    escolheuResposta = false;
+    escolhida = perguntas[perguntaAtual];
+    
+    pergunta.innerHTML = escolhida.questao; 
+    respostas.forEach((resposta, index) => {
+        resposta.innerHTML = escolhida.opcoes[index];
+        
+        resposta.addEventListener('click', () => {
+            console.log(`Clicou em ${resposta.innerHTML}`);
+            escolheuResposta = true;
+            proxima.style.opacity = '1';
+            proxima.style.pointerEvents = 'auto';
+            respostas.forEach(resposta => {
+                resposta.style.pointerEvents = 'none';
+            })
+            if (resposta.innerHTML === escolhida.opcoes[escolhida.correta]) {
+                console.log('Acertou!');
+                acertos++;
+                console.log(acertos);
+                resposta.classList.add('correta');
+                return;
+            } else {
+                console.log('ERRRRRRou!');
+                resposta.classList.add('errada');
+                console.log(respostas[escolhida.correta]);
+                respostas[escolhida.correta].classList.add('correta');
+                respostas[escolhida.correta].style.opacity = '.5';
+                return;
+            }
+        })
+    })
+}
+
+mostrarPergunta();
+
+proxima.addEventListener('click', () => {
+    perguntaAtual++;
+    escolheuResposta = false;
+    proxima.style.opacity = '.5';
+    proxima.style.pointerEvents = 'none';
+    respostas.forEach(resposta => {
+        resposta.style.pointerEvents = 'auto';
+        resposta.classList.remove('correta', 'errada');
+    })
+    respostas[escolhida.correta].style.opacity = '1';
+    mostrarPergunta();
+})
